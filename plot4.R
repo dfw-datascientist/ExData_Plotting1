@@ -14,6 +14,7 @@ hpc_set$Global_active_power <- as.numeric(hpc_set$Global_active_power)
 hpc_set$Sub_metering_1 <- as.numeric(hpc_set$Sub_metering_1)
 hpc_set$Sub_metering_2 <- as.numeric(hpc_set$Sub_metering_2)
 hpc_set$Sub_metering_3 <- as.numeric(hpc_set$Sub_metering_3)
+hpc_set$Global_reactive_power <- as.numeric(hpc_set$Global_reactive_power)
 
 png(file = "plot4.png")
 par(mfrow = c(2,2))
