@@ -1,4 +1,7 @@
-hpc <- read.table(file = 'household_power_consumption.txt', sep = ";", stringsAsFactors = FALSE, header = TRUE)
+zipfile <- tempfile()
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", zipfile)
+unzip(zipfile)
+hpc <- read.table('household_power_consumption.txt', sep = ";", stringsAsFactors = FALSE, header = TRUE, )
 #install.packages("lubridate")
 #install.packages("dplyr")
 library(lubridate)
